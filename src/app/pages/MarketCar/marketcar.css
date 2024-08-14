@@ -1,0 +1,49 @@
+.fullscreen-bg{
+    background-image: url('https://media.istockphoto.com/id/1305302109/pt/vetorial/pixel-minecraft-style-land-background-concept-of-game-ground-pixelated-horizontal.jpg?s=170667a&w=0&k=20&c=8mxjpjXvU6g7M4knA8YcwcL__rTUU9XuOVtFXDiNwEo=');
+    background-size: cover;   /* Cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+.titulo {
+    position: fixed !important;
+    top: 2px !important;
+    right: 30px !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 10px !important;
+    color: black !important;
+    border-radius: 5px !important;
+}
+
+.top-right-list {
+    position: fixed !important;
+    top: 60px !important;
+    right: 0px !important;
+    list-style-type: none !important;
+    margin: 50 !important;
+    padding: 10px !important;
+    color: black !important;
+    border-radius: 5px !important;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se não houver espaço suficiente */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo branco com leve transparência */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar os itens */
+    flex: 1 1 calc(25% - 20px); /* Cada item ocupará 25% da largura da tela menos o espaço da margem */
+    box-sizing: border-box; /* Inclui o padding e a borda dentro da largura total */
+    min-width: 200px; /* Largura mínima para cada item */
+}
